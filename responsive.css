@@ -1,0 +1,302 @@
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1000px) {
+
+    .nav-menu {
+        gap: 20px;
+    }
+
+    .nav-menu a {
+        font-size: 11px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transformation-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 75px 0;
+    }
+
+    .navbar {
+        min-height: 75px;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        background: var(--cream);
+
+        border-top: 1px solid var(--border);
+
+        padding: 25px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 18px;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero h1 {
+        font-size: 52px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .intro-grid,
+    .about-story-grid,
+    .services-intro,
+    .transformations-intro,
+    .experience-grid,
+    .values-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .intro-image img,
+    .about-story-image img,
+    .services-intro-image img,
+    .transformations-intro-image img,
+    .experience-image img {
+        height: 450px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .philosophy-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-card img {
+        height: 300px;
+    }
+
+    .transformations-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 250px;
+    }
+
+    .transformation-item.large {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    .service-list-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .transformation-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .transformation-card {
+        height: 450px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .appointment-form-wrapper {
+        padding: 30px 20px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+
+    .container {
+        width: 88%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .page-hero h1 {
+        font-size: 42px;
+    }
+
+    .section-heading h2,
+    .about-story-content h2,
+    .services-intro-content h2,
+    .transformations-intro-content h2,
+    .experience-content h2,
+    .values-content h2,
+    .contact-info h2,
+    .location-content h2 {
+        font-size: 40px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card img {
+        height: 400px;
+    }
+
+    .transformations-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transformation-item {
+        height: 300px;
+    }
+
+    .service-title-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .hours-row {
+        flex-direction: column;
+        gap: 3px;
+    }
+
+}
+/* =====================================================
+   HOME PAGE RESPONSIVE
+===================================================== */
+
+@media (max-width: 768px) {
+
+
+    .home-hero {
+
+        padding: 70px 0;
+
+    }
+
+
+    .home-hero-grid {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 45px;
+
+    }
+
+
+    .home-hero-content {
+
+        padding: 0;
+
+        order: 1;
+
+    }
+
+
+    .home-hero-image {
+
+        width: 100%;
+
+        height: 480px;
+
+        order: 2;
+
+    }
+
+
+    .service-cards {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .service-card-image {
+
+        height: 400px;
+
+    }
+
+
+    .transformation-preview-grid {
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 50px;
+
+    }
+
+
+    .transformation-preview-image {
+
+        width: 100%;
+
+        height: 450px;
+
+    }
+
+
+}
